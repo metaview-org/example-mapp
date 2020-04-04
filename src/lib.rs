@@ -6,7 +6,7 @@ use regex::Regex;
 use lazy_static::lazy_static;
 use ammolite_math::*;
 use wasm_bindgen::prelude::*;
-use mlib::*;
+use ::mlib::*;
 
 #[derive(Default)]
 pub struct SyncIO {
@@ -489,7 +489,7 @@ impl Mapp for ExampleMapp {
     }
 
     fn receive_event(&mut self, event: Event) {
-        dbg!(event);
+        // dbg!(event);
     }
 
     fn flush_io(&mut self) -> IO {
