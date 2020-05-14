@@ -10,11 +10,13 @@ edition = "2018"
 crate-type = ['cdylib', 'lib']
 
 [dependencies]
-ammolite-math = { path = "../ammolite/ammolite-math" }
-mlib = { path = "../mlib" }
+ammolite-math = { git = "https://github.com/metaview-org/ammolite" }
+# ammolite-math = { path = "../ammolite/ammolite-math" }
+mlib = { git = "https://github.com/metaview-org/mlib" }
+# mlib = { path = "../mlib" }
 include_dir = { git = "https://github.com/erickt/include_dir", branch = "sort" }
-json5 = "0.2.5"
 lazy_static = "1.4.0"
 regex = "1.3.1"
+json5 = "0.2.5"
 serde = { version = "1.0", features = ["derive"] }
 wasm-bindgen = "0.2.55"
